@@ -82,61 +82,27 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+using ForecastApp;
 
 namespace temperatura;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	Resultados resultado;
 
 	public MainPage()
 	{
 		InitializeComponent();
+	}
+	void TestaLayout()
+	{
+		resultado= new Resultados();
+		resultado.Temp = 23;
+		resultado.Description = "tempo nublado";
+		resultado.Currently = "dia";
+		resultado.City = "Apucarana, PR";
+		resultado.Humidity = ""
+
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
