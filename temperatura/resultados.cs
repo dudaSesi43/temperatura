@@ -11,6 +11,14 @@ public class Resultados
     public string Sunset {get;set;}
     public string Wind_Speedy {get;set;}
     public int Wind_Direction {get;set;}
+    public string moon_phase {get;set;}
+    public string img_id {get;set;}
+    public string time {get;set;}
+    public string date {get;set;}
+
+
+
+
     
     }
 
