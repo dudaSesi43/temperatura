@@ -1,4 +1,5 @@
 ﻿
+using System.Reflection.Emit;
 using ForecastApp;
 
 namespace temperatura;
@@ -31,25 +32,20 @@ public partial class MainPage : ContentPage
 
 		Void PreencheTela()
 		{
-			labelTemperature.Text = Resultados.Temp;
-			labelDescricao.Text = Resultados.Descripition;
-			labelCurrently.Text =  Resultados.Currently;
-			labelCity.Text = Resultados.City;
-			labelHumidity = Resultados.Humidity;
-			labelRain = Resultados.Rain;
-			labelSunrise = Resultados.Sunrise;
-			labelSunset = Resultados.Sunset;
-			labelWind_Speedy = Resultados.Wind_Speedy;
-			labelWind_Direction = Resultados.Wind_Direction;
-			labelmoon_pha = Resultados.moon_pha;
-			labelimg_id = Resultados.img_id;
-			labelTime = 
-			
-
-			
-
-
-
+			labelTemperature.Text = resultado.Temp;
+			labelDescricao.Text = resultado.Descripition;
+			labelCurrently.Text = resultado.Currently;
+			labelCity.Text = resultado.City;
+			labelHumidity.Text= resultado.Humidity;
+			labelRain.Text= resultado.Rain;
+			labelSunrise.Text= resultado.Sunrise;
+			labelSunset. Text= resultado=.Sunset;
+			labelWind_Speedy.Text= resultado.Wind_Speedy;
+			labelWind_Direction.Text= resultado.Wind_Direction;
+			labelmoon_pha.Text= resultado.moon_pha;
+			labelimg_id.Text= resultado.img_id;
+			labelTime.Text = resultado.time;
+			labeldate.Text = resultado.date;
 
 
 
@@ -72,6 +68,13 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Clicked {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
+	{
+		<Image
+                Source="diachuvoso.pnd"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
 	}
 }
 
