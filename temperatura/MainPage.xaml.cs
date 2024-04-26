@@ -35,7 +35,7 @@ public partial class MainPage : ContentPage
 			labelTemperature.Text = resultado.Temp;
 			labelDescricao.Text = resultado.Descripition;
 			labelCurrently.Text = resultado.Currently;
-			labelCity.Text = resultado.City;
+			labelCityText = resultado.City;
 			labelHumidity.Text= resultado.Humidity;
 			labelRain.Text= resultado.Rain;
 			labelSunrise.Text= resultado.Sunrise;

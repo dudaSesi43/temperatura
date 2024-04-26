@@ -3,39 +3,137 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="temperatura.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid.RowDefinitions>
+    <RowDefinitions  Height="100"/>
+    <RowDefinitions Height="*"/>
+    <RowDefinitions Height="*"/>
+    <RowDefinitions Height="*"/>
+    <RowDefinitions Height="*"/>
+    <RowDefinitions Height="100"/>
+     </Grid.RowDefinitions>
+     <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="10"/>
+    <ColumnDefinition Width="80"/>
+    <ColumnDefinition Width="90"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="90"/>
+    <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+    <Label X:Name="Temperature"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+     <Label X:Name="Descricao"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+ <Label X:Name="Currently"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+     <Label X:Name="CuCity"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+     <Label X:Name="Humidity"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="JAI___.TTF"
+     Grid.RowSpan="3"/>
+
+      <Label X:Name="Rain"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+      <Label X:Name="Sunrise"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+
+    <Label X:Name="Sunset"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+     <Label X:Name="Wind_Speedy"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+      <Label X:Name="Wind_Direction"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+       <Label X:Name="moon_phaon"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+      <Label X:Name="img_id"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+      <Label X:Name="Time"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+       <Label X:Name="date"
+    Grid.Row="1"
+     Grid.Column="1"
+     TextColor="Black"
+     FontSize="50"
+     FontFamily="OpenSans-Regular"
+     Grid.RowSpan="3"/>
+
+
+
 
 </ContentPage>
