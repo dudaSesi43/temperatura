@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="temperatura.MainPage">
@@ -20,7 +20,7 @@
     <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
 
-    <Label X:Name="Temperature"
+    <Label x:Name="TemperatureLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -28,7 +28,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-     <Label X:Name="Descricao"
+     <Label x:Name="DescricaoLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -36,7 +36,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
- <Label X:Name="Currently"
+ <Label x:Name="CurrentlyLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -44,7 +44,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-     <Label X:Name="CuCity"
+     <Label x:Name="CityLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -52,7 +52,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-     <Label X:Name="Humidity"
+     <Label x:Name="HumidityLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -60,7 +60,7 @@
      FontFamily="JAI___.TTF"
      Grid.RowSpan="3"/>
 
-      <Label X:Name="Rain"
+      <Label x:Name="RainLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -68,7 +68,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-      <Label X:Name="Sunrise"
+      <Label x:Name="SunriseLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -77,7 +77,7 @@
      Grid.RowSpan="3"/>
 
 
-    <Label X:Name="Sunset"
+    <Label x:Name="SunsetLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -85,7 +85,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-     <Label X:Name="Wind_Speedy"
+     <Label x:Name="WindSpeedyLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -93,7 +93,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-      <Label X:Name="Wind_Direction"
+      <Label x:Name="WindDirectionLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -101,7 +101,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-       <Label X:Name="moon_phaon"
+       <Label x:Name="MoonPhaseLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -109,7 +109,9 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-      <Label X:Name="img_id"
+
+
+      <Label x:Name="TimeLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
@@ -117,15 +119,7 @@
      FontFamily="OpenSans-Regular"
      Grid.RowSpan="3"/>
 
-      <Label X:Name="Time"
-    Grid.Row="1"
-     Grid.Column="1"
-     TextColor="Black"
-     FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
-
-       <Label X:Name="date"
+       <Label x:Name="DateLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"

@@ -6,75 +6,59 @@ namespace temperatura;
 
 public partial class MainPage : ContentPage
 {
-	Resultados resultado;
+	Resposta resposta;
+	Results resultado;
 
 	public MainPage()
 	{
 		InitializeComponent();
+		TestaLayout();
+		PreencheTela();
 	}
 	void TestaLayout()
 	{
-		resultado= new Resultados();
-		resultado.Temp = 23;
-		resultado.Description = "tempo nublado";
-		resultado.Currently = "dia";
-		resultado.City = "Apucarana, PR";
-		resultado.Humidity = 20;
-		resultado.Rain = 0.0;
-		resultado.Sunrise  = "06:39";
-		resultado.Sunset = "06:11pm";
-		resultado.Wind_Speedy = "4.99 km/h";
-		resultado.Wind_Direction = 40;
-		resultado.moon_pha= "cheia";
-		resultado.img_id= "28";
-		resultado.Time= "08:09";
-		resultado.date= "19/04/2024";
-
-		Void PreencheTela()
+		resultado= new Results();
+		resposta.resultado.temp = 23;
+		resposta.resultado.description = "tempo nublado";
+		resposta.resultado.currently = "dia";
+		resposta.resultado.city = "Apucarana, PR";
+		resposta.resultado.humidity = 20;
+		resposta.resultado.rain = 0.0;
+		resposta.resultado.sunrise  = "06:39";
+		resposta.resultado.sunset = "06:11pm";
+		resposta.resultado.wind_speedy = "4.99 km/h";
+		resposta.resultado.wind_direction = 40;
+		resposta.resultado.moon_phase= "cheia";
+		
+	}
+		void PreencheTela()
 		{
-			labelTemperature.Text = resultado.Temp;
-			labelDescricao.Text = resultado.Descripition;
-			labelCurrently.Text = resultado.Currently;
-			labelCityText = resultado.City;
-			labelHumidity.Text= resultado.Humidity;
-			labelRain.Text= resultado.Rain;
-			labelSunrise.Text= resultado.Sunrise;
-			labelSunset. Text= resultado=.Sunset;
-			labelWind_Speedy.Text= resultado.Wind_Speedy;
-			labelWind_Direction.Text= resultado.Wind_Direction;
-			labelmoon_pha.Text= resultado.moon_pha;
-			labelimg_id.Text= resultado.img_id;
-			labelTime.Text = resultado.time;
-			labeldate.Text = resultado.date;
+			TemperatureLabel.Text = resposta.resultado.temp;
+			DescricaoLabel.Text = resposta.resultado.description;
+			CurrentlyLabel.Text = resposta.resultado.currently;
+			CityLabel.Text = resposta.resultado.city;
+			HumidityLabel.Text= resposta.resultado.humidity;
+			RainLabel.Text= resposta.resultado.rain;
+			SunriseLabel.Text= resposta.resultado.sunrise;
+			SunsetLabel. Text= resposta.resultado.sunset;
+			WindSpeedyLabel.Text= resposta.resultado.wind_speedy;
+			WindDirectionLabel.Text= resposta.resultado.wind_direction;
+			MoonPhaseLabel.Text= resposta.resultado.moon_phase;
+			TimeLabel.Text = resposta.resultado.time;
+			DateLabel.Text = resposta.resultado.date;
+
+		
+	}
 
 
 
-
-
-		}
+		
 
 
 
 
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+	
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
-	{
-		<Image
-                Source="diachuvoso.pnd"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-	}
-}
 
