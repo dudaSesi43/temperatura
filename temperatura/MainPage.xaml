@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="temperatura.MainPage">
-
+             <Grid>
     <Grid.RowDefinitions>
-    <RowDefinitions  Height="100"/>
-    <RowDefinitions Height="*"/>
-    <RowDefinitions Height="*"/>
-    <RowDefinitions Height="*"/>
-    <RowDefinitions Height="*"/>
-    <RowDefinitions Height="100"/>
+    <RowDefinition  Height="100"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="100"/>
      </Grid.RowDefinitions>
      <Grid.ColumnDefinitions>
     <ColumnDefinition Width="10"/>
@@ -19,62 +19,62 @@
     <ColumnDefinition Width="90"/>
     <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
+  
 
     <Label x:Name="TemperatureLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"/>
 
      <Label x:Name="DescricaoLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
  <Label x:Name="CurrentlyLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
      <Label x:Name="CityLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
      <Label x:Name="HumidityLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="JAI___.TTF"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
       <Label x:Name="RainLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
       <Label x:Name="SunriseLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
 
     <Label x:Name="SunsetLabel"
@@ -82,32 +82,32 @@
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
      <Label x:Name="WindSpeedyLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
       <Label x:Name="WindDirectionLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
        <Label x:Name="MoonPhaseLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
 
 
@@ -116,18 +116,18 @@
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
        <Label x:Name="DateLabel"
     Grid.Row="1"
      Grid.Column="1"
      TextColor="Black"
      FontSize="50"
-     FontFamily="OpenSans-Regular"
-     Grid.RowSpan="3"/>
+     FontFamily="OpenSansSemibold"
+     />
 
 
-
+</Grid>
 
 </ContentPage>
